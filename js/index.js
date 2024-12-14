@@ -15,6 +15,9 @@ else {
         alert('Number is not three-digit')
     }
 }
+
+// const str = 123;
+// const strNum = String(str); - или треба було тут оставить эти две консты?
 const digit1 = strNum[0];
 const digit2 = strNum[1];
 const digit3 = strNum[2];

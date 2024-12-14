@@ -1,8 +1,6 @@
 'use strict';
 
 const threeDigitNumberInput = prompt('Enter three-digit number');
-const str = 123;
-const strNum = String(str);
 
 if (!threeDigitNumberInput?.trim() || isNaN(threeDigitNumberInput)
     || !Number.isInteger(+threeDigitNumberInput)) {
@@ -16,12 +14,22 @@ else {
     }
 }
 
-// const str = 123;
-// const strNum = String(str); - или треба було тут оставить эти две консты?
-const digit1 = strNum[0];
-const digit2 = strNum[1];
-const digit3 = strNum[2];
+const str = '123';
 
-if (digit1 === digit1 || digit1 === digit2 || digit1 === digit3) {
+const digit1 = str[0];
+const digit2 = str[1];
+const digit3 = str[2];
+
+if (digit1 === digit2 || digit1 === digit3 || digit2 === digit3) {
     alert('You entered 2 or 3 identical numbers');
 }
+
+
+// const arr = str.split('');
+// const digit1 = arr[0];
+// const digit2 = arr[1];
+// const digit3 = arr[2];
+
+// if (digit1 === digit2 || digit1 === digit3 || digit2 === digit3) {
+//     alert('You entered 2 or 3 identical numbers');
+// }
